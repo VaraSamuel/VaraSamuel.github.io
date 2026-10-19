@@ -70,14 +70,15 @@
       <h2>Profile</h2>
     </div>
     <p class="lede reveal">
-      I'm a Master's candidate in Computer &amp; Information Science (AI concentration) at the
-      University of Pennsylvania, and CEO of the Agentic AI &amp; Boost Ur Business divisions at
-      Ascend&nbsp;AI&nbsp;Innovations, where I lead engineering and product for a portfolio of
-      multitenant AI agent platforms serving clients across ten-plus industries. My work sits
-      at the intersection of applied machine learning
-      and production software: from a neuron-detection pipeline used daily in a neuroscience lab,
-      to AI-driven research tooling at the Wharton School, to executive dashboards running live
-      for operating businesses today.
+      Samuel P. Vara is an AI/ML engineer and technology executive holding a Master's degree in
+      Computer and Information Science, with a concentration in Artificial Intelligence, from the
+      University of Pennsylvania. He currently serves as CEO of the Agentic AI &amp; Boost Ur
+      Business divisions at Ascend&nbsp;AI&nbsp;Innovations, leading engineering and product for a
+      portfolio of multitenant AI agent platforms deployed across ten-plus industries. His work
+      spans applied machine learning and production software: neuron-detection systems used daily
+      in neuroscience research, quantitative market-microstructure research, AI-driven research
+      tooling developed at the Wharton School, and executive dashboards running live for operating
+      businesses today.
     </p>
   </section>
 
@@ -209,6 +210,24 @@
       factory partners, automated per-factory Word document generation, and multi-month trend
       tracking, with accuracy independently verified by a second implementation built in a
       different language, checked SKU by SKU against production.</p>
+    </article>
+
+    <article class="feature-case reveal">
+      <div class="fc-head">
+        <h3>Queuesight</h3>
+        <span class="fc-tag">Quantitative Research, Market Microstructure</span>
+      </div>
+      <p>A limit order book forecasting system evaluated the way a trading desk would: after
+      crossing the spread, with latency, and with a statistical guarantee on how often the trades
+      it takes lose money. A queue-reactive simulator with a hidden informed-trader regime
+      generates the market data; three models (logistic regression on order flow imbalance,
+      gradient-boosted trees on microstructure features, and a DeepLOB-style conv and GRU network)
+      forecast direction; and two distribution-free methods, Learn-then-Test risk control and
+      adaptive conformal prediction with delayed labels, decide when a forecast is worth trading
+      on. Across eight independently simulated markets, the Learn-then-Test gate certified its
+      loss-rate bound on 8 of 8 seeds and produced the highest net PnL per trade of any strategy
+      tested, including an always-trade baseline and a tuned confidence threshold.</p>
+      <p class="fc-stack"><strong>Stack:</strong> Python, PyTorch, scikit-learn, Streamlit, pytest.</p>
     </article>
 
     <div class="project-grid">
