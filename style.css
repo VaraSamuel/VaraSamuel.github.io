@@ -299,12 +299,25 @@ a { color: inherit; }
 .ti-body li { margin-bottom: 8px; }
 .ti-body li::marker { color: var(--gold); }
 
+/* ---------- Group label ---------- */
+.group-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 56px 0 8px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.group-label:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+
 /* ---------- Featured case ---------- */
 .feature-case {
   padding: 40px 0;
   border-top: 1px solid var(--line);
 }
 .feature-case:first-of-type { border-top: none; }
+.group-label + .feature-case { border-top: none; padding-top: 0; }
 .fc-head {
   display: flex;
   align-items: baseline;
@@ -317,6 +330,27 @@ a { color: inherit; }
   font-size: 1.8rem;
   font-weight: 500;
   margin: 0;
+}
+.fc-head h3 a,
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(var(--gold), var(--gold));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size 0.2s ease;
+}
+.fc-head h3 a:hover,
+.project-card h3 a:hover {
+  background-size: 100% 1px;
+}
+.ext-icon {
+  display: inline-block;
+  font-size: 0.6em;
+  color: var(--gold);
+  margin-left: 4px;
+  vertical-align: super;
 }
 .fc-tag {
   font-size: 0.72rem;
@@ -341,6 +375,7 @@ a { color: inherit; }
   background: var(--line);
   border: 1px solid var(--line);
 }
+.project-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .project-card {
   background: var(--surface);
   padding: 36px 28px;
