@@ -104,6 +104,20 @@
       </article>
 
       <article class="timeline-item reveal">
+        <div class="ti-when">May 2026–Present</div>
+        <div class="ti-body">
+          <h3>Chief Technology Officer</h3>
+          <p class="ti-org">Robus Works AI</p>
+          <ul>
+            <li>Architected and shipped the three production applications that run Robus's entire client delivery pipeline on a shared Next.js and Prisma stack, spanning roughly 25 database models: internal delivery tooling, a client engagement workspace, and the public site and account system.</li>
+            <li>Built the Assessment Copilot and AI Opportunity Scoring Matrix that operationalize Robus's automation-readiness methodology on live client engagements, including a pre-sales pipeline, a gated lead-qualification checklist, and a cross-client Signal Engine.</li>
+            <li>Designed a structurally separate client portal, reachable only through a per-engagement token link with no login, so the privacy boundary between internal and client-facing data is architectural rather than a permission setting.</li>
+            <li>Diagnosed and recovered a production database outage the same day it occurred.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
         <div class="ti-when">Jan 2025–Present</div>
         <div class="ti-body">
           <h3>Lead Software Developer</h3>
@@ -214,20 +228,6 @@
 
     <article class="feature-case reveal">
       <div class="fc-head">
-        <h3>Robus Ops &amp; AAC Ops</h3>
-        <span class="fc-tag">Consulting Operations Platform</span>
-      </div>
-      <p>A shared lead-qualification and client-assessment platform deployed across two Ascend AI
-      Innovations engagements. Tracks the pipeline from discovery call through lead qualification
-      and conversion, scores each client's workflows across frequency, time burden, error risk,
-      and automation readiness, and a cross-client Signal Engine flags automation opportunities
-      that clear an in-vertical adoption threshold, surfacing what to build next across the
-      client base.</p>
-      <p class="fc-stack"><strong>Stack:</strong> Next.js, TypeScript, Prisma / PostgreSQL, NextAuth, React-PDF, Zod.</p>
-    </article>
-
-    <article class="feature-case reveal">
-      <div class="fc-head">
         <h3>Benebone Intelligence Platform</h3>
         <span class="fc-tag">Case Study</span>
       </div>
@@ -237,6 +237,60 @@
       factory partners, automated per-factory Word document generation, and multi-month trend
       tracking, with accuracy independently verified by a second implementation built in a
       different language, checked SKU by SKU against production.</p>
+    </article>
+
+    <p class="group-label reveal">Contributed for Robus Works AI, designed and built by Samuel P. Vara</p>
+
+    <article class="feature-case reveal">
+      <div class="fc-head">
+        <h3><a href="https://www.robusworksai.com/" target="_blank" rel="noopener">Robus Works AI<span class="ext-icon">&#8599;</span></a></h3>
+        <span class="fc-tag">Chief Technology Officer</span>
+      </div>
+      <p>Robus Works AI is a consulting firm that assesses how ready a business's workflows are
+      for automation. As CTO, Samuel built the three production applications that run the
+      company's entire delivery pipeline, roughly 25 database models in total: internal delivery
+      tooling, a client engagement workspace, and the public site and account system, with a
+      single sign-up on the public site automatically provisioning a real engagement across both
+      internal apps.</p>
+      <p class="fc-stack"><strong>Stack:</strong> Next.js 16, React 19, TypeScript, Tailwind CSS v4, PostgreSQL / Prisma 7, Auth.js, Railway, Render.</p>
+    </article>
+
+    <article class="feature-case reveal">
+      <div class="fc-head">
+        <h3>robus-ops-app</h3>
+        <span class="fc-tag">Internal Delivery Tooling</span>
+      </div>
+      <p>The team's own working tools for running the consulting business day to day. An
+      Assessment Copilot takes raw interview notes and scores candidate workflows on frequency,
+      time burden, error risk, and automation readiness, with voice input support. A four-tier AI
+      Opportunity Scoring Matrix is the real rubric behind every engagement, feeding a pre-sales
+      pipeline and CRM with a six-section gated lead-qualification checklist, a library of delivery
+      playbooks, and a Signal Engine that tracks workflow adoption across every client toward the
+      threshold that decides when a capability is ready to become a real product.</p>
+    </article>
+
+    <article class="feature-case reveal">
+      <div class="fc-head">
+        <h3>robus-workspace-app</h3>
+        <span class="fc-tag">Client Engagement Workspace</span>
+      </div>
+      <p>Replaces what was originally a manually built Notion workspace per client. Seven internal
+      pages per engagement cover the project tracker, interview log, workflow build register,
+      scoring matrix, and communication log, alongside a structurally separate client portal,
+      four client-facing pages reachable only through a per-engagement token link with no login
+      and no access to internal pages. Email intake parses forwarded messages directly into the
+      communication log, and every table backs up to Google Drive nightly.</p>
+    </article>
+
+    <article class="feature-case reveal">
+      <div class="fc-head">
+        <h3>robus-site</h3>
+        <span class="fc-tag">Public Site &amp; Account System</span>
+      </div>
+      <p>The public front door at robusworksai.com. Self-serve signup fully auto-provisions a real
+      engagement in the workspace app and a CRM record in the ops app the instant someone signs
+      up, with dual authentication: Google Sign-In for the owner team and email and password for
+      clients, plus an owner dashboard for reviewing every pending signup.</p>
     </article>
 
     <p class="group-label reveal">Contributed for Monell Chemical Senses Center, designed and built by Samuel P. Vara</p>
